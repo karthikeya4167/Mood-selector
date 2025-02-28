@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Mood Selector</h1>
+    <h2 id="mood-text">How are you feeling today?</h2>
+    <select id="mood-selector">
+        <option value="" disabled selected>- Select -</option>
+        <option value="white" data-text="Neutral" data-tip="Stay balanced and enjoy your day!" data-emoji="✨">Neutral</option>
+        <option value="yellow" data-text="Happy 😊" data-tip="Keep smiling! Happiness is contagious!" data-emoji="😊">Happy</option>
+        <option value="blue" data-text="Sad 😢" data-tip="It's okay to feel sad. Take deep breaths and talk to a friend!" data-emoji="😢">Sad</option>
+        <option value="red" data-text="Angry 😡" data-tip="Don't loose yourself and be patient" data-emoji="😡">Angry</option>
+        <option value="green" data-text="Relaxed 😌" data-tip="Cool and start working on your goal!" data-emoji="😌">Relaxed</option>
+    </select>
+    <p id="mood-tip">Select a mood to see a tip!</p>
+    <div class="sparkle top-left">✨</div>
+    <div class="sparkle top-right">✨</div>
+    <div class="sparkle bottom-left">✨</div>
+    <div class="sparkle bottom-right">✨</div>
+    <script src="script.js"></script>
+    </h2>
+</body>
+</html>

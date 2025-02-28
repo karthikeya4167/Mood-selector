@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    transition: background-color 1s ease-in-out;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+#mood-tip {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+select:hover {
+    transform: scale(1.1);
+}
+.sparkle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    animation: sparkle-animation 2s infinite;
+}
+.sparkle.top-left { top: 10px; left: 10px; }
+.sparkle.top-right { top: 10px; right: 10px; }
+.sparkle.bottom-left { bottom: 10px; left: 10px; }
+.sparkle.bottom-right { bottom: 10px; right: 10px; }
+
+@keyframes sparkle-animation {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
