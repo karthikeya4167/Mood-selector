@@ -1,0 +1,1 @@
+is an interactive web application that allows users to select their current mood from a dropdown menu. Based on the selected emotion, the background color, mood text, and motivational tip dynamically update to match the user's feeling. Additionally, animated sparkling emoji effects appear at the four corners of the screen, enhancing the visual experience.
